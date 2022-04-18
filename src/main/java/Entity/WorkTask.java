@@ -13,7 +13,6 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Entity
 @Table(name = "WORK_TASK")
-@PrimaryKeyJoinColumn(name = "task_id")
 public class WorkTask extends Task {
 
     @Column(name = "cost")

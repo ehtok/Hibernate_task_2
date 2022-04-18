@@ -39,6 +39,7 @@ public class App {
                 .name("Work Task")
                 .description("Add Entity")
                 .build();
+
         EntityManager em = HibernateUtilsFactory.getEntityManager();
         em.getTransaction().begin();
         em.persist(task);

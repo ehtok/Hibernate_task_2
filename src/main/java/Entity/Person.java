@@ -12,8 +12,10 @@ import javax.persistence.Embeddable;
 @NoArgsConstructor
 @Embeddable
 public class Person {
+
     @Column(name = "name")
     private String name;
+
     @Column(name = "surname")
     private String surname;
 }
