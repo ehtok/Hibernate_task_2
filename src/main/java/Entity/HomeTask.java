@@ -12,8 +12,8 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "TASK")
-@DiscriminatorValue("home_task")
+@Table(name = "HOME_TASK")
+@PrimaryKeyJoinColumn(name = "task_id")
 public class HomeTask extends Task {
 
     @Column(name = "start_Date")

@@ -15,8 +15,7 @@ import javax.persistence.*;
 @SuperBuilder
 @Entity
 @Table(name = "TASK")
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "task_type", discriminatorType = DiscriminatorType.STRING)
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Task {
 
     @Id
